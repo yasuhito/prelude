@@ -15,7 +15,7 @@
 #+BEGIN_SRC emacs-lisp
   (global-set-key "\C-x\C-m" 'execute-extended-command)
   (global-set-key "\C-c\C-m" 'execute-extended-command)
-#+END_SRC emacs-lisp
+#+END_SRC
 
   C-w でカーソルの前の単語を消す
 
