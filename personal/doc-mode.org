@@ -1,0 +1,6 @@
+* doc-mode の設定
+
+#+BEGIN_SRC emacs-lisp
+  (use-package doc-mode
+    :load-path "personal/site-lisp/doc-mode-1.1/")
+#+END_SRC

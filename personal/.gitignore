@@ -1,3 +1,4 @@
-key-bindings.el
-ddskk.el
+!00init.el
+*.el
 *.html
+site-lisp/
