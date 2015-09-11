@@ -1,34 +1,36 @@
-"Effective Emacs" by Steve Yegge の設定で使えそうなとこを取り込む。
-http://sites.google.com/site/steveyegge2/effective-emacs
+* キーバインドの設定
 
-キーバインドが足りないところは key-chord を使う。
-間隔は短めで、ほとんど同時押しでないと発動しないようにしておく。
+  "Effective Emacs" by Steve Yegge の設定で使えそうなとこを取り込む。
+  http://sites.google.com/site/steveyegge2/effective-emacs
+
+  キーバインドが足りないところは key-chord を使う。
+  間隔は短めで、ほとんど同時押しでないと発動しないようにしておく。
 
 #+BEGIN_SRC emacs-lisp
   (setq key-chord-two-keys-delay 0.04)
 #+END_SRC
 
-メタキー + 何か を使わない
+  メタキー + 何か を使わない
 
 #+BEGIN_SRC emacs-lisp
   (global-set-key "\C-x\C-m" 'execute-extended-command)
   (global-set-key "\C-c\C-m" 'execute-extended-command)
 #+END_SRC emacs-lisp
 
-C-w でカーソルの前の単語を消す
+  C-w でカーソルの前の単語を消す
 
 #+BEGIN_SRC emacs-lisp
   (global-set-key "\C-w" 'backward-kill-word)
 #+END_SRC
 
-リージョンの削除
+  リージョンの削除
 
 #+BEGIN_SRC emacs-lisp
   (global-set-key "\C-x\C-k" 'kill-region)
   (global-set-key "\C-c\C-k" 'kill-region)
 #+END_SRC
 
-リージョンのコピー
+  リージョンのコピー
 
 #+BEGIN_SRC emacs-lisp
   (global-set-key "\C-x\C-w" 'kill-ring-save)
