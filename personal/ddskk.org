@@ -1,0 +1,6 @@
+* DDSKK の設定
+
+#+BEGIN_SRC emacs-lisp
+  (global-set-key "\C-x\C-j" 'skk-mode)
+  (global-set-key "\C-xj" 'skk-auto-fill-mode)
+#+END_SRC
