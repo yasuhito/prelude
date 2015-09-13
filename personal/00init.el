@@ -1,6 +1,7 @@
 ;; personal/ ディレクトリの中で最初にロードしたいので、
 ;; ファイル名は 00init.el にしてあります。
 
+(prelude-require-package 'use-package)
 (require 'use-package)
 
 (use-package org)
