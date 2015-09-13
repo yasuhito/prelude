@@ -13,3 +13,4 @@
 (my/load-org-file "key-bindings.org")
 (my/load-org-file "ddskk.org")
 (my/load-org-file "doc-mode.org")
+(my/load-org-file "migemo.org")
