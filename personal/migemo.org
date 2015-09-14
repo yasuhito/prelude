@@ -3,7 +3,9 @@
   https://github.com/emacs-jp/migemo
 
 #+BEGIN_SRC emacs-lisp
+  (prelude-require-package 'migemo)
   (use-package migemo)
+
   (setq migemo-command "cmigemo")
   (setq migemo-options '("-q" "--emacs"))
 
