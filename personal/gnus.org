@@ -1,0 +1,45 @@
+* 始めに
+  Gnus の基本的な設定や GTD をやるための設定をまとめていく。
+
+* 設定
+** インラインイメージを常に表示する:
+#+BEGIN_SRC emacs-lisp
+  (setq mm-inline-text-html-with-images t)
+  (setq mm-w3m-safe-url-regexp nil)
+#+END_SRC
+
+** いくつかの From: を使い分ける
+- http://www.emacswiki.org/emacs/GnusAlias
+- notmuch のドキュメントのほうが詳しいかも
+  http://notmuchmail.org/emacstips/#index17h2
+
+#+BEGIN_SRC emacs-lisp
+  (require 'gnus-alias)
+  (gnus-alias-init)
+
+  (setq gnus-alias-identity-alist
+        '(("gmail"
+           nil
+           "Yasuhito Takamiya <yasuhito@gmail.com>"
+           nil
+           nil
+           nil
+           nil)
+          ("nec"
+           nil
+           "Yasuhito Takamiya <y-takamiya@az.jp.nec.com>"
+           nil
+           nil
+           nil)))
+
+  (setq gnus-alias-default-identity "nec")
+  (add-hook 'message-setup-hook 'gnus-alias-determine-identity)
+#+END_SRC
+
+** パスワード入力を省く
+#+BEGIN_SRC emacs-lisp
+  (setq nnimap-authinfo-file "~/.authinfo")
+#+END_SRC
+
+ただし, パスワードを "password" とかにしてると正規表現が腐ってるのか？
+うまく自動ログインできないので "dovecot" とかの文字列にしておく必要あり.
