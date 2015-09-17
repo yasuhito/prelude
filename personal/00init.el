@@ -16,3 +16,4 @@
 (my/load-org-file "doc-mode.org")
 (my/load-org-file "migemo.org")
 (my/load-org-file "gnus.org")
+(my/load-org-file "font.org")
