@@ -18,3 +18,4 @@
 (my/load-org-file "gnus.org")
 (my/load-org-file "font.org")
 (my/load-org-file "magit-gitflow.org")
+(my/load-org-file "wakatime.org")

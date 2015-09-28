@@ -1,0 +1,12 @@
+* Wakatime の設定
+
+GitHub のページ: https://github.com/wakatime/wakatime-mode
+
+brew で wakatime-cli をインストールしてもなぜか動かないので、README にあるように pip でインストールする必要があった。
+
+#+BEGIN_SRC emacs-lisp
+  (require 'secrets)
+  (setq wakatime-python-bin "/usr/local/bin/python")
+  (setq wakatime-cli-path "/usr/local/bin/wakatime")
+  (global-wakatime-mode)
+#+END_SRC
