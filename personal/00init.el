@@ -11,6 +11,7 @@
   "Load up FILE (*.org) in prelude-personal-dir"
   (org-babel-load-file (expand-file-name file prelude-personal-dir)))
 
+(my/load-org-file "rvm.org")
 (my/load-org-file "key-bindings.org")
 (my/load-org-file "ddskk.org")
 (my/load-org-file "doc-mode.org")

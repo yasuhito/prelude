@@ -1,0 +1,8 @@
+* Wakatime の設定
+
+rvm.el のページ: https://github.com/senny/rvm.el
+
+#+BEGIN_SRC emacs-lisp
+  (require 'rvm)
+  (rvm-use-default)
+#+END_SRC
